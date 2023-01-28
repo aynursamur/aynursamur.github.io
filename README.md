@@ -1,1 +1,0 @@
-# aynursamur.github.io
