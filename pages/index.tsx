@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import ExternalLink from '@/components/ExternalLink';
-import profilePic from '@/public/images/profile.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,10 +17,12 @@ export default function Home() {
       <main>
         <div className="mx-auto max-w-2xl w-full p-6">
           <div className="flex flex-col items-center">
-            <Image
-              src={profilePic}
+          <Image
+              src={'/images/profile.png'}
               alt="Picture of the Aynur Samur"
               className="rounded-full w-32 h-32"
+              width={128}
+              height={128}
             />
             <h1 className="text-3xl mt-3 font-bold">Aynur Samur</h1>
           </div>
